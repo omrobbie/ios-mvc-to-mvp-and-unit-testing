@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     private func setupList() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(CourseCell.self, forCellReuseIdentifier: cellId)
     }
 }
 
@@ -32,18 +33,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)!
-        cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
-        let item = dummyData[indexPath.row]
-        cell.textLabel?.text = item.name
-
-        if item.number_of_lessons > 35 {
-            cell.detailTextLabel?.text = "Lesson 30+ Check it Out!"
-            cell.accessoryType = .detailDisclosureButton
-        } else {
-            cell.detailTextLabel?.text = "Lesson \(item.number_of_lessons)"
-            cell.accessoryType = .none
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! CourseCell
+        cell.course = dummyData[indexPath.row]
         return cell
     }
 }

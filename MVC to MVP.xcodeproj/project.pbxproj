@@ -14,6 +14,7 @@
 		FCB630F824B7415400C79882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCB630F724B7415400C79882 /* Assets.xcassets */; };
 		FCB630FB24B7415400C79882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB630F924B7415400C79882 /* LaunchScreen.storyboard */; };
 		FCB6310624B742E900C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310524B742E900C79882 /* Course.swift */; };
+		FCB6310824B7467E00C79882 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310724B7467E00C79882 /* CourseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FCB630FA24B7415400C79882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCB630FC24B7415400C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB6310524B742E900C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		FCB6310724B7467E00C79882 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB630F424B7415300C79882 /* Main.storyboard */,
+				FCB6310724B7467E00C79882 /* CourseCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				FCB630F324B7415300C79882 /* ViewController.swift in Sources */,
 				FCB630EF24B7415300C79882 /* AppDelegate.swift in Sources */,
 				FCB630F124B7415300C79882 /* SceneDelegate.swift in Sources */,
+				FCB6310824B7467E00C79882 /* CourseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
