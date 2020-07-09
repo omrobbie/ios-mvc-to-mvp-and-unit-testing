@@ -56,15 +56,31 @@
 		FCB630ED24B7415300C79882 /* MVC to MVP */ = {
 			isa = PBXGroup;
 			children = (
+				FCB6310224B7429500C79882 /* View */,
+				FCB6310324B7429D00C79882 /* Controller */,
 				FCB630EE24B7415300C79882 /* AppDelegate.swift */,
 				FCB630F024B7415300C79882 /* SceneDelegate.swift */,
-				FCB630F224B7415300C79882 /* ViewController.swift */,
-				FCB630F424B7415300C79882 /* Main.storyboard */,
 				FCB630F724B7415400C79882 /* Assets.xcassets */,
 				FCB630F924B7415400C79882 /* LaunchScreen.storyboard */,
 				FCB630FC24B7415400C79882 /* Info.plist */,
 			);
 			path = "MVC to MVP";
+			sourceTree = "<group>";
+		};
+		FCB6310224B7429500C79882 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCB630F424B7415300C79882 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCB6310324B7429D00C79882 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FCB630F224B7415300C79882 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
