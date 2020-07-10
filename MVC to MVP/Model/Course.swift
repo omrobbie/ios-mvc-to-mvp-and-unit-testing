@@ -6,7 +6,7 @@
 //  Copyright © 2020 omrobbie. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Course: Decodable {
 
@@ -21,3 +21,22 @@ let dummyData: [Course] = [
     Course(id: 2, name: "Intermediate Training", number_of_lessons: 32),
     Course(id: 3, name: "Kindle Basic Training", number_of_lessons: 19)
 ]
+
+struct CourseViewData {
+
+    let title: String
+    let detail: String
+    let type: UITableViewCell.AccessoryType
+
+    init(course: Course) {
+        title = course.name
+
+        if course.number_of_lessons > 35 {
+            detail = "Lesson 30+ Check it Out!"
+            type = .detailDisclosureButton
+        } else {
+            detail = "Lesson \(course.number_of_lessons)"
+            type = .none
+        }
+    }
+}

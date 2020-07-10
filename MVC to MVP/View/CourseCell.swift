@@ -10,17 +10,11 @@ import UIKit
 
 class CourseCell: UITableViewCell {
 
-    var course: Course! {
+    var courseViewData: CourseViewData! {
         didSet {
-            textLabel?.text = course.name
-
-            if course.number_of_lessons > 35 {
-                detailTextLabel?.text = "Lesson 30+ Check it Out!"
-                accessoryType = .detailDisclosureButton
-            } else {
-                detailTextLabel?.text = "Lesson \(course.number_of_lessons)"
-                accessoryType = .none
-            }
+            textLabel?.text = courseViewData.title
+            detailTextLabel?.text = courseViewData.detail
+            accessoryType = courseViewData.type
         }
     }
 
