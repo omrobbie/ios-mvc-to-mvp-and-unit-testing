@@ -13,6 +13,12 @@ import MVC_to_MVP
 
 class MVC_to_MVPTests: XCTestCase {
 
+    var courseViewMock: CourseViewMock!
+
+    override func setUp() {
+        courseViewMock = CourseViewMock()
+    }
+
     func testLessonList() {
         let course = Course(id: 0, name: "Learn with omrobbie", number_of_lessons: 10)
         let courseViewData = CourseViewData(course: course)
@@ -29,5 +35,21 @@ class MVC_to_MVPTests: XCTestCase {
         XCTAssertEqual(courseViewData.title, course.name)
         XCTAssertEqual(courseViewData.detail, "Lesson 30+ Check it Out!")
         XCTAssertEqual(courseViewData.type, UITableViewCell.AccessoryType.detailDisclosureButton)
+    }
+
+    func testShowLessonData() {
+        let coursePresenter = CoursePresenter(view: courseViewMock, data: dummyData)
+        coursePresenter.fetchData()
+
+        XCTAssertTrue(courseViewMock.dataShowOnList)
+    }
+}
+
+class CourseViewMock: NSObject, CourseView {
+
+    var dataShowOnList = false
+
+    func showData(courseViewData: [CourseViewData]) {
+        dataShowOnList = true
     }
 }
