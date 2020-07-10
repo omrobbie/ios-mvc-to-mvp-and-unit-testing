@@ -16,7 +16,18 @@
 		FCB6310624B742E900C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310524B742E900C79882 /* Course.swift */; };
 		FCB6310824B7467E00C79882 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310724B7467E00C79882 /* CourseCell.swift */; };
 		FCB6311124B8072D00C79882 /* CoursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6311024B8072D00C79882 /* CoursePresenter.swift */; };
+		FCB6311924B8094500C79882 /* MVC_to_MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6311824B8094500C79882 /* MVC_to_MVPTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCB6311B24B8094500C79882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB630E324B7415300C79882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCB630EA24B7415300C79882;
+			remoteInfo = "MVC to MVP";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FCB630EB24B7415300C79882 /* MVC to MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC to MVP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		FCB6310524B742E900C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FCB6310724B7467E00C79882 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		FCB6311024B8072D00C79882 /* CoursePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePresenter.swift; sourceTree = "<group>"; };
+		FCB6311624B8094500C79882 /* MVC to MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC to MVPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB6311824B8094500C79882 /* MVC_to_MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVC_to_MVPTests.swift; sourceTree = "<group>"; };
+		FCB6311A24B8094500C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FCB630E824B7415300C79882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB6311324B8094500C79882 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB630ED24B7415300C79882 /* MVC to MVP */,
+				FCB6311724B8094500C79882 /* MVC to MVPTests */,
 				FCB630EC24B7415300C79882 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB630EB24B7415300C79882 /* MVC to MVP.app */,
+				FCB6311624B8094500C79882 /* MVC to MVPTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +131,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		FCB6311724B8094500C79882 /* MVC to MVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCB6311824B8094500C79882 /* MVC_to_MVPTests.swift */,
+				FCB6311A24B8094500C79882 /* Info.plist */,
+			);
+			path = "MVC to MVPTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +160,24 @@
 			productReference = FCB630EB24B7415300C79882 /* MVC to MVP.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FCB6311524B8094500C79882 /* MVC to MVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB6311D24B8094500C79882 /* Build configuration list for PBXNativeTarget "MVC to MVPTests" */;
+			buildPhases = (
+				FCB6311224B8094500C79882 /* Sources */,
+				FCB6311324B8094500C79882 /* Frameworks */,
+				FCB6311424B8094500C79882 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCB6311C24B8094500C79882 /* PBXTargetDependency */,
+			);
+			name = "MVC to MVPTests";
+			productName = "MVC to MVPTests";
+			productReference = FCB6311624B8094500C79882 /* MVC to MVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -140,6 +190,10 @@
 				TargetAttributes = {
 					FCB630EA24B7415300C79882 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					FCB6311524B8094500C79882 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FCB630EA24B7415300C79882;
 					};
 				};
 			};
@@ -157,6 +211,7 @@
 			projectRoot = "";
 			targets = (
 				FCB630EA24B7415300C79882 /* MVC to MVP */,
+				FCB6311524B8094500C79882 /* MVC to MVPTests */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +224,13 @@
 				FCB630FB24B7415400C79882 /* LaunchScreen.storyboard in Resources */,
 				FCB630F824B7415400C79882 /* Assets.xcassets in Resources */,
 				FCB630F624B7415300C79882 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB6311424B8094500C79882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +250,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB6311224B8094500C79882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB6311924B8094500C79882 /* MVC_to_MVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCB6311C24B8094500C79882 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCB630EA24B7415300C79882 /* MVC to MVP */;
+			targetProxy = FCB6311B24B8094500C79882 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FCB630F424B7415300C79882 /* Main.storyboard */ = {
@@ -358,6 +436,44 @@
 			};
 			name = Release;
 		};
+		FCB6311E24B8094500C79882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVC to MVPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omrobbie.MVC-to-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVC to MVP.app/MVC to MVP";
+			};
+			name = Debug;
+		};
+		FCB6311F24B8094500C79882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MVC to MVPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omrobbie.MVC-to-MVPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVC to MVP.app/MVC to MVP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +491,15 @@
 			buildConfigurations = (
 				FCB6310024B7415400C79882 /* Debug */,
 				FCB6310124B7415400C79882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCB6311D24B8094500C79882 /* Build configuration list for PBXNativeTarget "MVC to MVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB6311E24B8094500C79882 /* Debug */,
+				FCB6311F24B8094500C79882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
