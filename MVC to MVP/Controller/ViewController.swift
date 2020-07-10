@@ -15,20 +15,18 @@ class ViewController: UIViewController {
     private let cellId = "cell"
     private var courseViewDatas = [CourseViewData]()
 
+    private lazy var coursePresenter = CoursePresenter(view: self, data: dummyData)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupList()
-        fetchData()
+        coursePresenter.fetchData()
     }
 
     private func setupList() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CourseCell.self, forCellReuseIdentifier: cellId)
-    }
-
-    private func fetchData() {
-        courseViewDatas = dummyData.map({return CourseViewData(course: $0)})
     }
 }
 
@@ -42,5 +40,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! CourseCell
         cell.courseViewData = courseViewDatas[indexPath.row]
         return cell
+    }
+}
+
+extension ViewController: CourseView {
+
+    func showData(courseViewData: [CourseViewData]) {
+        self.courseViewDatas = courseViewData
+        tableView.reloadData()
     }
 }

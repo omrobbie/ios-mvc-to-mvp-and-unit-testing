@@ -15,6 +15,7 @@
 		FCB630FB24B7415400C79882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB630F924B7415400C79882 /* LaunchScreen.storyboard */; };
 		FCB6310624B742E900C79882 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310524B742E900C79882 /* Course.swift */; };
 		FCB6310824B7467E00C79882 /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6310724B7467E00C79882 /* CourseCell.swift */; };
+		FCB6311124B8072D00C79882 /* CoursePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6311024B8072D00C79882 /* CoursePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FCB630FC24B7415400C79882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB6310524B742E900C79882 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FCB6310724B7467E00C79882 /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
+		FCB6311024B8072D00C79882 /* CoursePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB6310424B742DF00C79882 /* Model */,
+				FCB6310F24B8066300C79882 /* Presenter */,
 				FCB6310224B7429500C79882 /* View */,
 				FCB6310324B7429D00C79882 /* Controller */,
 				FCB630EE24B7415300C79882 /* AppDelegate.swift */,
@@ -95,6 +98,14 @@
 				FCB6310524B742E900C79882 /* Course.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FCB6310F24B8066300C79882 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FCB6311024B8072D00C79882 /* CoursePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB6310624B742E900C79882 /* Course.swift in Sources */,
+				FCB6311124B8072D00C79882 /* CoursePresenter.swift in Sources */,
 				FCB630F324B7415300C79882 /* ViewController.swift in Sources */,
 				FCB630EF24B7415300C79882 /* AppDelegate.swift in Sources */,
 				FCB630F124B7415300C79882 /* SceneDelegate.swift in Sources */,
